@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <!-- Include JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body onload="fill_navigation();">
+
+<div id="nav-bar"></div>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#nav-bar li a").eq(6).addClass("active");
+    });
+</script>
+</body>
+</html>
