@@ -1,3 +1,29 @@
 .active {
     color: #f00;
 }
+
+body,html {padding: 0; margin: 0}
+body {background-color: #DDE3FF; margin: 0;}
+
+
+header {box-sizing: border-box; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0; width: 100%;}
+#head1 {display: block; text-align: center; font-family: "Calisto MT"; font-size: 40px; 
+	font-weight: bolder; background-color: #4c0d32; color: #B3F2CD; padding: 20px 0px 5px; width: 100%; 
+	box-sizing: border-box; margin:0;}
+#head2 {display: block; text-align: center; font-family: "calisto MT"; font-weight: bold; font-size: 20px; 
+	background-color: #4c0d32; color: #fff; padding: 10px 0; width: 100%; box-sizing: 
+	border-box; margin:0;}
+h3 {display: block; text-align: center; font-family: "calisto MT"; color: #000; 
+	box-sizing: border-box; padding: 10px 0px 0px 0px; text-decoration: underline;}
+h4 {display: block; text-align: center; font-family: "calisto MT"; color: #000; 
+	box-sizing: border-box;}
+
+#nav-bar {background-color: #2C3A96; padding: 15px 0;}
+#nav-bar a {color: #B3F2CD; font-size: 17px; font-family: "calisto MT"; font-size: 18px; text-decoration: none; padding: 5px 40px;}
+#nav-bar ul {list-style-type: none; font-size: 15px;}
+#nav-bar ul li {display: inline-block;}
+
+article ul {list-style-type: none;}
+article ul li {text-align: center; margin-bottom: 10px;}
+
+iframe {margin: 0 auto; display:block;}
