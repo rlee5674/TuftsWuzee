@@ -1,32 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Homepage</title>
+    <title>Contact</title>
     <!-- Include JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-    <script type = "text/javascript">
-    	function fadeOutIn(elmt1,elmt2) {
-    		//alert("1");
-    		$(elmt1).fadeOut(1000, function(){
-				$(elmt2).fadeIn(1000, function(){
-					//timeout
-					delay(5000);
-					fadeInOut(elmt2,elmt1);
-				});
-			});
-		}
-    </script>
 </head>
 
 <body>
 	<header>
-		<div id = "heading">
-			<div id = "head1"> Wuzee </div>
-			<div id = "head2"> Tufts Chinese Dance Troupe </div>
-		</div>
+		<h1> Wuzee </h1>
+		<h2> Tufts Chinese Dance Troupe </h2>
 	</header>
 
 	<body onload="fill_navigation();">
@@ -34,32 +19,9 @@
 
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#nav-bar li a").eq(0).addClass("active");
+				$("#nav-bar li a").eq(6).addClass("active");
 			});
-
-			fadeOutIn('#head1', 'Tufts Chinese Dance Troupe');
-			//fadeOutIn('#head2', '#head1');
-
 		</script>
 
-		<article>
-			<h3> Upcoming Performance Events </h3>
-			<h4> Catch Wuzee in Action! </h4>
-			
-			<ul>
-				<li> Nov 2nd, 2019: UJP's Pan Asia: A New Dawn for Peace
-					<br> @ Democracy Center, 45 Mount Auburn Street, Cambridge MA </li>
-				<li> Feb 21st, 2020: Spring Festival Gala 
-					<br> @ Wilbur Theatre, 246 Tremont St, Boston MA </li>
-			</ul>
-		</article>
-
-		<br><br><br>
-
-		<footer>
-			<div id = "endPic" style="text-align: center">
-				<img src = "PurpleSleeves.png" width = 50%>
-			</div>
-		</footer>
 </body>
 </html>
