@@ -7,14 +7,21 @@
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 </head>
-<body onload="fill_navigation();">
 
-<div id="nav-bar"></div>
+<body>
+	<header>
+		<h1> Wuzee </h1>
+		<h2> Tufts Chinese Dance Troupe </h2>
+	</header>
 
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#nav-bar li a").eq(1).addClass("active");
-    });
-</script>
+	<body onload="fill_navigation();">
+		<div id="nav-bar"></div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#nav-bar li a").eq(1).addClass("active");
+			});
+		</script>
+
 </body>
 </html>
