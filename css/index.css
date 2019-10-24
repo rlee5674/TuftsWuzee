@@ -7,10 +7,10 @@ body {background-color: #DDE3FF; margin: 0;}
 
 
 header {box-sizing: border-box; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0; width: 100%;}
-#head1 {display: block; text-align: center; font-family: "Calisto MT"; font-size: 40px; 
+h1 {display: block; text-align: center; font-family: "Calisto MT"; font-size: 40px; 
 	font-weight: bolder; background-color: #4c0d32; color: #B3F2CD; padding: 20px 0px 5px; width: 100%; 
 	box-sizing: border-box; margin:0;}
-#head2 {display: block; text-align: center; font-family: "calisto MT"; font-weight: bold; font-size: 20px; 
+h2 {display: block; text-align: center; font-family: "calisto MT"; font-weight: bold; font-size: 20px; 
 	background-color: #4c0d32; color: #fff; padding: 10px 0; width: 100%; box-sizing: 
 	border-box; margin:0;}
 h3 {display: block; text-align: center; font-family: "calisto MT"; color: #000; 
