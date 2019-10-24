@@ -6,27 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-    <script type = "text/javascript">
-    	function fadeOutIn(elmt1,elmt2) {
-    		//alert("1");
-    		$(elmt1).fadeOut(1000, function(){
-				$(elmt2).fadeIn(1000, function(){
-					//timeout
-					delay(5000);
-					fadeInOut(elmt2,elmt1);
-				});
-			});
-		}
-    </script>
 </head>
 
 <body>
 	<header>
-		<div id = "heading">
-			<div id = "head1"> Wuzee </div>
-			<div id = "head2"> Tufts Chinese Dance Troupe </div>
-		</div>
+		<h1> Wuzee </h1>
+		<h2> Tufts Chinese Dance Troupe </h2>
 	</header>
 
 	<body onload="fill_navigation();">
