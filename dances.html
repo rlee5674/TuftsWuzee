@@ -5,23 +5,104 @@
     <!-- Include JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
+     <script type="text/javascript" src="./js/display_dances.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <style type="text/css">
+        h3, h4 {
+            text-align: left;
+        }
+
+        .column {
+            float: left;
+            width: 22%;
+            height: 40vh;
+            background-color: #333;
+            box-sizing: border-box;
+            color: #eee;
+            margin-right: 2%;
+            padding: 0 2%;
+        }
+
+        #contents {
+            padding: 0 5%;
+        }
+
+        header {
+            padding: 2%;
+        }
+
+        #next {
+            margin-top: 15%;
+        }
+
+    </style>
 </head>
 
-<body>
-	<header>
-		<h1> Wuzee </h1>
-		<h2> Tufts Chinese Dance Troupe </h2>
-	</header>
+<body onload="fill_navigation(); display_dances();">
+    <header>
+        <h1> Wuzee </h1>
+        <h2> Tufts Chinese Dance Troupe </h2>
+        <div id="nav-bar"></div>
+    </header>
 
-	<body onload="fill_navigation();">
-		<div id="nav-bar"></div>
+<div id="contents">
+    <h2>2019 - 2020 Dances</h2>
+    <h3>Theme: Yin and Yang</h3>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#nav-bar li a").eq(2).addClass("active");
-			});
-		</script>
+    <div id="dances">
+<!--         <div class="column">
+            <h3>Ethnic Fan</h3>
+            <p><i>Coach</i>: Chu Ling</p>
+            <p><i>Time</i>: Jackson, Sun 4 - 6</p>
+        </div>
+        <div class="column">
+            <h3>Scholar</h3>
+            <p><i>Coach</i>: Li</p>
+            <p><i>Time</i>: Harleston, Sat 5 - 7</p>
+        </div>
+        <div class="column">
+            <h3>Umbrella Fusion</h3>
+            <p><i>Coach</i>: Alice, Claire</p>
+            <p><i>Time</i>: Harleston, Fri 4 - 7</p>
+        </div>
+        <div class="column">
+            <h3>Sword</h3>
+            <p><i>Coach</i>: Ken</p>
+            <p><i>Time</i>: Jackson, Sat 2 - 4</p>
+        </div>
+        <div class="column">
+            <h3>Retro Hip Hop</h3>
+            <p><i>Coach</i>: Zihan</p>
+            <p><i>Time</i>: Harleston, Sun 3 - 4</p>
+        </div>
+        <div class="column">
+            <h3>Vintage Chinese Love Song Medley</h3>
+            <p><i>Time</i>: Harleston, Sun 12 - 3</p>
+            <ul>
+                <div>
+                    <h4>Part A: 告白气球</h4>
+                    <p><i>Coach</i>: Zihan</p>
+                </div>
 
+                <div>
+                    <h4>Part C: 光年之外</h4>
+                    <p><i>Coach</i>: Ken</p>
+                </div>
+
+                <div>
+                    <h4>Part D: 倒数</h4>
+                    <p><i>Coach</i>: Alice</p>
+                </div>
+            </ul>
+        </div>
+        <div class="column">
+            <h3>Butterfly Lovers 梁祝</h3>
+            <p><i>Coach</i>: Becky</p>
+        </div>-->
+    </div>
+</div>
+    <script type="text/javascript">
+       make_active('curr_dances');
+    </script>
 </body>
 </html>
