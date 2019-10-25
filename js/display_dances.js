@@ -4,13 +4,13 @@ function dance(name, coach, meeting) {
     this.meeting = meeting;
 }
 
-var dance_names = ["Ethnic Fan", "Scholar", "Umbrella Fusion", "Sword", "Retro Hip Hop", "Vintage Chinese Song Medley", "Butterfly Lovers 梁祝"];
+var dance_names = ["Ethnic Fan", "Scholar", "Umbrella Fusion", "Sword", "Retro Hip Hop", "Love Song Medley", "Butterfly Lovers"];
 var coach_names = ["Chu Ling", "Li", "Addy, Phoebe", "Kaede", "Fei Hong", "Various", "Rhea"];
-var meeting = ["Jackson, Sun 1 - 4", "Harleston, Sat 5 -7", "Harleston, Fri 4 - 7", "Jackson, Sat 2 - 4", "Harleston, Sun 3 - 4", "Harleston, Sun 12 - 3", ""];
+var meeting = ["Jackson, Sun 4-6", "Harleston, Sat 5-7", "Harleston, Fri 5-7", "Jackson, Sat 2-4", "Harleston, Sun 2-2", "Harleston, Sun 12-2", "TBD, Set for Spring Semester"];
 var last_index = 0;
 dances = new Array();
 
-for (var i = 0; i < dance_names.length; i++) {
+for (var i = 0; i < 7; i++) {
     dances.push(new dance(dance_names[i], coach_names[i], meeting[i]));
 }
 
