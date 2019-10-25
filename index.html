@@ -6,27 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-
-    <script type = "text/javascript">
-    	function fadeOutIn(elmt1,elmt2) {
-    		//alert("1");
-    		$(elmt1).fadeOut(1000, function(){
-				$(elmt2).fadeIn(1000, function(){
-					//timeout
-					delay(5000);
-					fadeInOut(elmt2,elmt1);
-				});
-			});
-		}
-    </script>
 </head>
 
 <body>
 	<header>
-		<div id = "heading">
-			<div id = "head1"> Wuzee </div>
-			<div id = "head2"> Tufts Chinese Dance Troupe </div>
-		</div>
+		<h1> Wuzee </h1>
+		<h2> Tufts Chinese Dance Troupe </h2>
 	</header>
 
 	<body onload="fill_navigation();">
@@ -36,10 +21,7 @@
 			$(document).ready(function() {
 				$("#nav-bar li a").eq(0).addClass("active");
 			});
-
-			fadeOutIn('#head1', 'Tufts Chinese Dance Troupe');
 			//fadeOutIn('#head2', '#head1');
-
 		</script>
 
 		<article>
@@ -57,9 +39,7 @@
 		<br><br><br>
 
 		<footer>
-			<div id = "endPic" style="text-align: center">
-				<img src = "PurpleSleeves.png" width = 50%>
-			</div>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/bQoblH-Xu3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</footer>
 </body>
 </html>
