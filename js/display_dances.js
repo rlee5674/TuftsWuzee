@@ -10,7 +10,7 @@ var meeting = ["Jackson, Sun 4-6", "Harleston, Sat 5-7", "Harleston, Fri 5-7", "
 var last_index = 0;
 dances = new Array();
 
-for (var i = 0; i < 7; i++) {
+for (var i = 0; i < dance_names.length; i++) {
     dances.push(new dance(dance_names[i], coach_names[i], meeting[i]));
 }
 
