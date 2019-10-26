@@ -10,6 +10,30 @@ p {
 body {
 color: #0B1708;
 }
+
+
+/*CONTACT INFO STYLE***************************************************/
+
+#coln {
+   flex: 33.33%;
+  padding: 5px
+}
+#rown{
+  display: flex;
+}
+#pic{
+  max-width: 400px;
+  width: 100%;
+}
+
+#textlikepic {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #2C3A96; 
+}
+/*FORM STYLE**************************************************/
+
 #row:after {
   content: "";
   display: table;
