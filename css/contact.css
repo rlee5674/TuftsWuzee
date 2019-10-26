@@ -1,0 +1,85 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+p {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+body {
+color: #FFFFFF;
+}
+#row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#submit {
+  background-color: #4c0d32
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  text-align: center;
+}
+
+#submit:hover {
+  background-color: #2C3A96;
+}
+
+#formarea {
+  background-color: #4c0d32;
+  padding: 10px;
+  border:50px;
+  text-align: center;
+   box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 10%;
+  margin: 0 auto;
+  display:inline-block;
+  width:100%;
+  vertical-align: middle;
+}
+
+
+#text, select, textarea, #email, #name  {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+#col1 {
+  margin-top: 6px;
+  float: left;
+  width: 25%;
+
+}
+
+#col2{
+  margin-top: 6px;
+  float: left;
+  width: 75%;
+
+}
+
+#buttoflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*for phones, referenced W3schools.com for this */
+@media screen and (max-width: 600px) {
+  #col1, #col2, #submit {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
