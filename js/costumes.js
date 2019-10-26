@@ -1,11 +1,11 @@
 var img_path = "./images/catalog/";
 var images = 
 {"Shanghai at Night.JPG": ["8 burgundy qipao", "5 golden hair ties", "3 high heeled shoes"],
- "Sleeves.jpg": ["16 fuschia sleeve costumes", "16 sashes", "8 white pants"], 
+ "River.jpg": ["16 green blue costumes", "14 silver chains", "8 tan ballet shoes"], 
  "Dai.png": ["10 blue costumes", "8 silver head pieces", "3 costume pieces"], 
  "Jasmine.png": ["26 green costumes", "15 pink fans", "6 blue fans"], 
- "FanRibbon.jpg": ["30 costumes", "15 red ribbons", "15 white fans"], 
- "InRain.png": ["14 costumes", "14 hand fans", "8 flower hair pins"], 
+ "FanRibbon.jpg": ["30 blue white costumes", "15 red ribbons", "15 white fans"], 
+ "InRain.png": ["14 blue costumes", "14 hand fans", "8 flower hair pins"], 
  "Bloom.jpg": ["18 parasols", "8 black tops", "8 black tights"], 
  "Swag.jpg": ["8 black crop tops", "8 red skirts", "6 small fans"]
 };
