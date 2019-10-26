@@ -8,7 +8,7 @@ p {
   display: inline-block;
 }
 body {
-color: #FFFFFF;
+color: #0B1708;
 }
 #row:after {
   content: "";
@@ -17,7 +17,7 @@ color: #FFFFFF;
 }
 
 #submit {
-  background-color: #4c0d32
+  background-color: #6A9518;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -32,17 +32,23 @@ color: #FFFFFF;
 }
 
 #formarea {
-  background-color: #4c0d32;
+  background-color: #609B91;
+
   padding: 10px;
-  border:50px;
   text-align: center;
-   box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 10%;
+  box-sizing: border-box;
   margin: 0 auto;
-  display:inline-block;
-  width:100%;
+  width:60%;
   vertical-align: middle;
+  justify-content: center;
+  float:left;
+  position: relative;
+  z-index: -100;
+  top: 20%;
+  left: 20%;
+  border-radius: 15%;
+
 }
 
 
