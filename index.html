@@ -8,56 +8,85 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     
     <script language="javascript" type="text/javascript">
-    	var images = new Array()
-    	images[0] = "2017.jpg";
-    	images[1] = "2018.jpg";
-    	images[2] = "2019.jpg";
-    	setInterval("changeImage()", 1000);
-    	var x=0;
+        var images = new Array()
+        images[0] = "2017.jpg";
+        images[1] = "2018.jpg";
+        images[2] = "2019.jpg";
+        setInterval("changeImage()", 1000);
+        var x=0;
 
-    	function changeImage()
-    	{
-    		document.getElementById("img").src=images[x]
-    		x++;
-    		if (images.length == x) 
-    		{
-    			x = 0;
-    		}
-    	}
+        function changeImage()
+        {
+            document.getElementById("img").src=images[x]
+            x++;
+            if (images.length == x) 
+            {
+                x = 0;
+            }
+        }
      </script>
 </head>
 
-<body onload="fill_navigation();">
-	<header>
-		<h1> Wuzee </h1>
-		<h2> Tufts Chinese Dance Troupe </h2>
+<body>
+    <header>
+        <h1> Wuzee </h1>
+        <h2> Tufts Chinese Dance Troupe </h2>
         <div id="nav-bar"></div>
-	</header>
-    <script type="text/javascript">
-		$(document).ready(function() {
-			$("#nav-bar li a").eq(0).addClass("active");
-	    });
-	</script>
-    <article>
-		<h3> Upcoming Performance Events </h3>
-		<h4> Catch Wuzee in Action! </h4>
-		<div>
-			Nov 2nd, 2019: UJP's Pan Asia: A New Dawn for Peace <br>
-			Democracy Center, 45 Mount Auburn Street, Cambridge MA 
-		</div>
-		<br>
-		<div>
-			Feb 21st, 2020: Spring Festival Gala <br>
-			Wilbur Theatre, 246 Tremont St, Boston MA 
-		</div>
-	</article>
+    </header>
 
-		<br><br><br>
-		<footer>
-			<div id = "slideshow" style="text-align: center">
-				<h3> Our Showcases </h3>
-				<img id="img" src="2017.jpg">
-			</div>
-		</footer>
+    <body onload="fill_navigation();">
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#nav-bar li a").eq(0).addClass("active");
+            });
+        </script>
+
+        <article>
+            <div id = "slideshow" style="text-align: center">
+                <h3> Our Showcases </h3>
+                <img id="img" src="2017.jpg">
+            </div>
+            <br>
+            
+            <h3> What's New with Wuzee? </h3>
+            <img src="images/Team.jpg" alt="SOC Performance">
+            <div>
+                Many thanks to Spirit of the Creative (SOC) for inviting us as guest performers this past Wednesday. 
+                We had a blast!
+            </div>
+            <br>
+            <h3> Team Reminders </h3>
+            <div> 
+                <ul>
+                    <li> Shopping period for dances are over! Attendance will now be counted. </li>
+                    <li> Ballet shoe orders have arrived. Pick yours up from Bianca! </li>
+                    <li> Boba Bonding for the Team this Friday! See you all there! </li>
+                </ul>
+            </div>
+            
+            <br><br>
+            <h3> Upcoming Performance Events </h3>
+            <h4> Catch Wuzee in Action! </h4>
+            <div>
+                Oct 26th, 2019: Parent's Weekend
+                Cohen Auditorium, Tufts University
+            </div>
+            <br>
+            <div>
+                Nov 2nd, 2019: UJP's Pan Asia: A New Dawn for Peace <br>
+                Democracy Center, 45 Mount Auburn Street, Cambridge MA 
+            </div>
+            <br>
+            <div>
+                Feb 21st, 2020: Spring Festival Gala <br>
+                Wilbur Theatre, 246 Tremont St, Boston MA 
+            </div>
+        </article>
+
+        <br><br><br>
+        <footer>
+
+        </footer>
 </body>
 </html>

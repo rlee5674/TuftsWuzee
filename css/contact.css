@@ -24,13 +24,17 @@ color: #0B1708;
 #pic{
   max-width: 400px;
   width: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 #textlikepic {
+    font-size: 1rem;
     max-width: 400px;
     width: 100%;
     text-align: center;
-    background-color: #2C3A96; 
+    border-radius: 20%;
+    background-color: #A18B79; 
 }
 /*FORM STYLE**************************************************/
 
