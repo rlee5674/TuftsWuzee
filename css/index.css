@@ -18,8 +18,9 @@ h1 {
 }
 h2 {display: block; text-align: center; font-weight: bold; font-size: 20px; 
 	background-color: #4c0d32; color: #fff; width: 100%; box-sizing: border-box; 
-	padding-top: 10px; padding-bottom: 20px; margin:0;}
-
+	padding-top: 10px; padding-bottom: 20px; margin:0;
+	font-family: cursive
+}
 #stuff {margin-top: 200px;}
 h3 {display: block; text-align: center; color: #000; 
 	box-sizing: border-box; padding: 10px 0px 0px 0px; text-decoration: underline;}
