@@ -33,12 +33,12 @@ header {
 }
 h1 {
 	display: block; 
-	 font-size: 40px; 
+	font-size: 40px; 
 	font-weight: bolder;
-	color: #B3F2CD;
-	 width: 100%; 
+	color: #4c0d32;
+	width: 100%; 
 	padding-top: 5vh; 
-	 margin:0;
+	margin:0;
 }
 h2 {
 	display: inline;
