@@ -29,15 +29,6 @@ function display_dances() {
         structure_dance(i);
     }
     last_index = i;
-    // var button = $('<input type="button" name="next" value="Next" id="next">')
-    // button.bind("click", function() {
-    //     for (var i = 0; i < dances.length; i++) {
-    //         var index = last_index + i;
-    //         fade_replace(index, i);
-    //     }
-    //     last_index += i;
-    // });
-    // button.appendTo("#dances");
 }
 
 function structure_dance(index) {
@@ -56,12 +47,10 @@ function structure_dance(index) {
 function fade_replace(i1, i2) {
     var curr_d = $("#d" + i2);
     curr_d.fadeOut("slow", function() {
-        console.log(dances[i1 % dance_names.length].name + " " + dances[i1 % dance_names.length].coach);
         curr_d.find(".title").html(dances[i1 % dance_names.length].name);
         curr_d.find("span").eq(0).html(dances[i1 % dance_names.length].coach);
         curr_d.find("span").eq(1).html(dances[i1 % dance_names.length].meeting);
         curr_d.find("span").eq(2).html(dances[i1 % dance_names.length].desc);
         curr_d.fadeIn("slow");
-        console.log(i1);
     });
 }

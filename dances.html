@@ -7,10 +7,12 @@
     <script type="text/javascript" src="./js/nav.js"></script>
      <script type="text/javascript" src="./js/display_dances.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
         #stuff {
             overflow: auto;
         }
+        
         #stuff h3, #stuff h4 {
             text-align: left;
         }
@@ -18,7 +20,7 @@
         .column {
             float: left;
             width: 22%;
-            height: 50vh;
+            height: 450px;
             overflow-y: auto;
             background-color: #333;
             box-sizing: border-box;
@@ -48,9 +50,12 @@
             padding: 0 5%;
         }
 
-        /*#next {
-            margin-top: 15%;
-        }*/
+        @media (max-width: 800px) {
+          .column {
+            width: 45%;
+            margin-right: 5%;
+          }
+        }
 
     </style>
 </head>
