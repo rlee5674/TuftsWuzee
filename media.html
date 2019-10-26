@@ -1,26 +1,55 @@
+<!-- 
+	Name: 		Camille Chan
+	Project: 	Comp20 Midterm1
+	This is the page that displays past photos and video from Wuzee previous showcases.  Uses Javascript, HTML, CSS.
+-->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Media</title>
-    <!-- Include JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
 </head>
+<body onload="fill_navigation();">
 
-<body>
-	<header>
-		<h1> Wuzee </h1>
-		<h2> Tufts Chinese Dance Troupe </h2>
-	</header>
+<div id="nav-bar"></div>
 
-	<body onload="fill_navigation();">
-		<div id="nav-bar"></div>
+<h3>Photos</h3>
+<div class="row">
+	<div class="column">
+		<img src="images/b1.jpg" class="expand" alt="2019: Eternal Love">
+		<img src="images/b2.jpg" class="expand" alt="2019: My New Swag">
+		<img src="images/v1.jpg" class="expand" alt="2018: Song of Beauty">
+		<img src="images/v2.jpg" class="expand" alt="2018: Jasmine Flowers">
+	</div>
+	<div class="column">
+		<img src="images/b4.jpg" class="expand" alt="2019: Shanghai at Night">
+		<img src="images/b3.jpg" class="expand" alt="2019: Flowers in the Rain">
+		<img src="images/b1.jpg" class="expand" alt="2019: Eternal Love">
+	</div>
+	<div class="column">
+		<img src="images/b7.jpg" class="expand" alt="2019: Spirit of the River">
+		<img src="images/v2.jpg" class="expand" alt="2018: Jasmine Flower">
+		<img src="images/b6.jpg" class="expand" alt="2019: Spirit of the River">
+		<img src="images/b5.jpg" class="expand" alt="2019: Spirit of the River">
+	</div>
+</div>
+<div id="myModal" class="modal">
+	<span class="close">Close</span>
+	<img class="modal-content" id="img01">
+	<div id="caption"></div>
+</div>
+<hr>
+<h3>Videos</h3>
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/bQoblH-Xu3E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#nav-bar li a").eq(4).addClass("active");
-			});
-		</script>
-
+<script type="text/javascript" src="js/media.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#nav-bar li a").eq(4).addClass("active");
+    });
+</script>
 </body>
+</html>
