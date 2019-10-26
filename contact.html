@@ -6,6 +6,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+	`<!--INTERNAL STYLESHEET!-->
+	<style>
+		#formarea{
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body>
@@ -23,9 +29,30 @@
 			});
 		</script>
 		
-		<div id = "stuff">
-			<h3> Get in touch with us! </h3>
-			Email: tufts.wuzee@gmail.com
+		<div id="formarea">
+		<h1>Contact Us!</h1>
+		<!-- Required Div Starts Here -->
+		<form id="form">
+			<h3>Send us a message!</h3>
+			<p id="returnmessage"></p>
+			<p>Name:</p>
+			<input type="text" id="name" placeholder="Name"/>
+			<p>Email: </p>
+			<input type="email" id="email" placeholder="Email"/>
+			<p>
+			Reason for contact: 
+			</p>
+			<select>
+				  <option value="Joining Wuzee">Joining Wuzee</option>
+				  <option value="Purchasing Costumes">Purchasing Costumes</option>
+				  <option value="Feedback on Wuzee performance">Feedback on Wuzee performance</option>
+				  <option value="Other">Other</option>
+			</select>
+			<p>Message:</p>
+			<textarea id="message" placeholder="Message......."></textarea>
+			<br />
+			<input type="button" id="submit" onclick= "getContact();" value="Send Message"/>
+		</form>
 		</div>
 
 </body>
