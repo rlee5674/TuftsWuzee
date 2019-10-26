@@ -32,7 +32,7 @@ header {
 	padding-top: 3vh; 
 }
 h1 {
-	display: inline; 
+	display: block; 
 	 font-size: 40px; 
 	font-weight: bolder;
 	color: #B3F2CD;
