@@ -9,6 +9,9 @@
     <script type="text/javascript" src="./js/costumes.js"></script>
 
     <style type="text/css">
+        #stuff {
+            overflow: auto;
+        }
         body {
             box-sizing: border-box;
         }
@@ -70,19 +73,18 @@
 </head>
 
 <body onload="fill_navigation();">
-<article>
 	<header>
 	<h1> Wuzee </h1>
 	<h2> Tufts Chinese Dance Troupe </h2>
+  <div id="nav-bar"></div>
 	</header>
-
-	<div id="nav-bar"></div>
-	<div id = "stuff">
-		<script type="text/javascript">
-			make_active('costumes');
-		</script>
-	</div>
-</article>
+<article>
+  	  	<div id = "stuff">
+  		<script type="text/javascript">
+  			make_active('costumes');
+  		</script>
+  	</div>
+  </article>
 
 </body>
 </html>

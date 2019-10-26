@@ -8,14 +8,17 @@
      <script type="text/javascript" src="./js/display_dances.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <style type="text/css">
-        h3, h4 {
+        #stuff {
+            overflow: auto;
+        }
+        #stuff h3, #stuff h4 {
             text-align: left;
         }
 
         .column {
             float: left;
             width: 22%;
-            height: 60vh;
+            height: 50vh;
             overflow-y: auto;
             background-color: #333;
             box-sizing: border-box;
@@ -45,21 +48,21 @@
             padding: 0 5%;
         }
 
-        #next {
+        /*#next {
             margin-top: 15%;
-        }
+        }*/
 
     </style>
 </head>
 
 <body onload="fill_navigation(); display_dances();">
-<article> 
      <header>
         <h1> Wuzee </h1>
         <h2> Tufts Chinese Dance Troupe </h2>
         <div id="nav-bar"></div>
     </header>
-
+    <body>
+<article> 
 <div id = "stuff">
 <div id="contents">
     <h3>2019 - 2020 Dances</h3>
@@ -69,6 +72,7 @@
     </div>
 </div>
     
+    </div>
 
       <script type="text/javascript">
             make_active('curr_dances');
