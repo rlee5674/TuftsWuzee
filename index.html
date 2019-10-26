@@ -6,6 +6,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    
+    <script language="javascript" type="text/javascript">
+    	var images = new Array()
+    	images[0] = "2017.jpg";
+    	images[1] = "2018.jpg";
+    	images[2] = "2019.jpg";
+    	setInterval("changeImage()", 1000);
+    	var x=0;
+
+    	function changeImage()
+    	{
+    		document.getElementById("img").src=images[x]
+    		x++;
+    		if (images.length == x) 
+    		{
+    			x = 0;
+    		}
+    	}
+     </script>
 </head>
 
 <body>
