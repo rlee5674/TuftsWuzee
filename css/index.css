@@ -1,5 +1,7 @@
 .active {
-    color: #ffeed6 !important;
+    color: #B3F2CD !important;  
+    font-weight: bold;
+}
 }
 
 * {
@@ -35,7 +37,7 @@ h1 {
     display: inline;
     font-size: 40px;
     font-weight: bolder;
-    color: #4c0d32;
+    color: #B3F2CD;
     width: 100%;
     padding-top: 5vh;
     margin: 0;
@@ -68,7 +70,7 @@ h4 {
 
 #nav-bar {
     width: 100%;
-    background-color: #2C3A96;
+    background-color: #8158B4;
     padding-top: 5px;
     padding-bottom: 5px;
     z-index: 9999;
