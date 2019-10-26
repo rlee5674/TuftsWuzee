@@ -6,11 +6,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-	`<!--INTERNAL STYLESHEET!-->
+    <link rel="stylesheet" type="text/css" href="./css/contact.css">
+	<!--INTERNAL STYLESHEET!-->
 	<style>
 		#formarea{
 			text-align: center;
 		}
+
+		#spacer{
+   		 width: 30%;
+  		  padding: 9%;
+  		  display:block;
+		}
+
 	</style>
 </head>
 
@@ -28,30 +36,62 @@
 				$("#nav-bar li a").eq(6).addClass("active");
 			});
 		</script>
-		
+		<!--SPACERS TO APPEAR BELOW MENU!-->
+		<div id = spacer>
+		</div>
+	
+		<!--CONTACT FORM!-->
 		<div id="formarea">
-		<h1>Contact Us!</h1>
-		<!-- Required Div Starts Here -->
+			<h4>Contact Us!</h4>
+			<h5>Send us a message!</h5>
+		
 		<form id="form">
-			<h3>Send us a message!</h3>
-			<p id="returnmessage"></p>
-			<p>Name:</p>
-			<input type="text" id="name" placeholder="Name"/>
-			<p>Email: </p>
-			<input type="email" id="email" placeholder="Email"/>
-			<p>
-			Reason for contact: 
-			</p>
-			<select>
-				  <option value="Joining Wuzee">Joining Wuzee</option>
-				  <option value="Purchasing Costumes">Purchasing Costumes</option>
-				  <option value="Feedback on Wuzee performance">Feedback on Wuzee performance</option>
-				  <option value="Other">Other</option>
-			</select>
-			<p>Message:</p>
-			<textarea id="message" placeholder="Message......."></textarea>
-			<br />
-			<input type="button" id="submit" onclick= "getContact();" value="Send Message"/>
+			<div id ="row">
+				<div id = "col1">
+					<p>Name:</p>
+				</div>
+				<div id = "col2">
+					<input type="text" id="name" placeholder="Name"/>
+				</div>
+			</div>
+
+			<div id ="row">
+				<div id = "col1">
+					<p>Email: </p>
+				</div>
+				<div id = "col2">
+					<input type="email" id="email" placeholder="Email"/>
+				</div>
+			</div>
+
+			<div id ="row">
+				<div id = "col1">
+				<p> Reason for contact: </p>
+				</div>
+				<div id = "col2">
+					<select>
+						  <option value="Joining Wuzee">Joining Wuzee</option>
+						  <option value="Purchasing Costumes">Purchasing Costumes</option>
+						  <option value="Feedback on Wuzee performance">Feedback on Wuzee performance</option>
+						  <option value="Other">Other</option>
+					</select>
+				</div>
+			</div>
+
+			<div id ="row">
+				<div id = "col1">
+					<p>Message:</p>
+				</div>
+				<div id = "col2">
+					<textarea id="message" placeholder="Message......." style="height:150px"></textarea>
+				</div>
+			</div>
+
+			<div id = "row">
+				<div id = "buttoflex">
+				<input type="submit" id="submit" value="Send Message"/>
+				</div>
+			</div>
 		</form>
 		</div>
 
