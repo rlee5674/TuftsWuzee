@@ -1,6 +1,9 @@
 .active {
     color: #f00;
 }
+* {
+	font-family:"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
 
 body,html {padding: 0; margin: 0; box-sizing: border-box;
 }
