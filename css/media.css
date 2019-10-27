@@ -1,6 +1,4 @@
-* {
-	font-family:"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
