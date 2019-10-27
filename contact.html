@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+
     <!-- Include JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/contact.css">
-	
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--INTERNAL STYLESHEET!-->
 	<style>
 		#formarea{
 			text-align: center;
+		}
+		h3 {
+			display: inline;
+			text-decoration: none;
+		}
+		h4 {
+			display: inline;
+			font-size: 20px;
 		}
 
 	</style>
@@ -38,34 +46,26 @@
 		<div><br/><br/></div>
 		<!--CONTACT FORM!------------------------------------------------------------>
 		<div id="formarea">
-			<h3>Contact Us!</h3>
-			<h4>Send us a message!</h4>
+		<br />	<h3>Contact Us!</h3> <br/> <br/>
 		
 		<form id="form">
 			<div id ="row">
-				<div id = "col1">
-					<p>Name:</p>
-				</div>
 				<div id = "col2">
 					<input type="text" id="name" placeholder="Name"/>
 				</div>
 			</div>
 
 			<div id ="row">
-				<div id = "col1">
-					<p>Email: </p>
-				</div>
 				<div id = "col2">
 					<input type="email" id="email" placeholder="Email"/>
 				</div>
 			</div>
 
 			<div id ="row">
-				<div id = "col1">
-				<p> Reason for contact: </p>
-				</div>
+
 				<div id = "col2">
 					<select>
+						<option value="Reason for Contact" disabled selected>Reason for Contact.......</option>
 						  <option value="Media/Press">Media/Press</option>
 						  <option value="Join the Team">Join the Team</option>
 						  <option value="Purchase costumes/props">Purchase costumes/props</option>
@@ -77,13 +77,11 @@
 			</div>
 
 			<div id ="row">
-				<div id = "col1">
-					<p>Message:</p>
-				</div>
 				<div id = "col2">
 					<textarea id="message" placeholder="Write a message.." style="height:150px"></textarea>
-				</div>
+				</div>	
 			</div>
+
 
 			<div id = "row">
 				<br />
@@ -94,18 +92,6 @@
 		</form>
 		</div>
 
-			<!--CONTACT INFO!------------------------------------------------------------>
-
-	<!--	<div id="rown">
-  			<div id="coln">
-  				<div><br/></div>
-   			 <img id = "pic" src="images/Showcase Pic.jpg" alt="Showcase" style="width:100%">
- 			</div>
- 		<div id="coln">
- 			<div><br/></div>
-    		<img id = "pic" src="images/logocrop.jpg" alt="Logo" style="width:100%">
-  			</div>
-		</div> !-->
 
 
 </article>
