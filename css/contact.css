@@ -88,8 +88,8 @@ p{
 
 
 #text, select, textarea, #email, #name  {
-  width: 80%;
-  padding: 20px;
+  width: 70%;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
