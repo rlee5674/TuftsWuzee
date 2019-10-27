@@ -39,7 +39,7 @@ h1 {
     font-weight: bolder;
     color: #B3F2CD;
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 10vh;
     margin: 0;
 }
 
@@ -49,6 +49,7 @@ h2 {
     font-size: 20px;
     color: #fff;
     width: 100%;
+    padding-top: 10vh;
     margin: 0;
 }
 
