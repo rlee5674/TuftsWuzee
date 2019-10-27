@@ -1,128 +1,98 @@
-.active {
-    color: #B3F2CD !important;  
-    font-weight: bold;
-}
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    
+    <script language="javascript" type="text/javascript">
+        var images = new Array()
+        images[0] = "2017.jpg";
+        images[1] = "2018.jpg";
+        images[2] = "2019.jpg";
+        setInterval("changeImage()", 5000);
+        var x=0;
 
-* {
-    box-sizing: border-box;
-    font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-}
-#imgshow {
-    max-width: 100%;
-  height: auto;
-}
-body, html {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+        function changeImage()
+        {
+            document.getElementById("img").src=images[x]
+            x++;
+            if (images.length == x) 
+            {
+                x = 0;
+            }
+        }
+     </script>
+</head>
 
-body {
-    background-color: #f5f5f5;
-    margin: 0;
-    align-content: center;
-}
+<body>
+    <header>
+       <br/>
+        <h1> Wuzee </h1>
+        <br/>
+        <h2> Tufts Chinese Dance Troupe </h2>
+        <br/><br/>
+        <div id="nav-bar"></div>
+    </header>
 
-header {
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: block;
-    background-color: #4cb69f;
-    z-index: 9999;
-    text-align: center;
-}
+    <body onload="fill_navigation();">
 
-h1 {
-    display: inline;
-    font-size: 40px;
-    font-weight: bolder;
-    color: #4c0d32;
-    width: 100%;
-    padding-top: 5vh;
-    margin: 0;
-}
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#nav-bar li a").eq(0).addClass("active");
+            });
+        </script>
 
-h2 {
-    display: inline;
-    font-weight: bold;
-    font-size: 20px;
-    color: #fff;
-    width: 100%;
-    margin: 0;
-}
+        <article>
+            <div id = "slideshow" style="text-align: center">
+                <h3> Our Showcases </h3>
+                <img id="imgshow" src="2017.jpg">
+            </div>
+            <br>
+            
+            <h3> What's New with Wuzee? </h3>
+            <img src="images/Team.jpg" alt="SOC Performance">
+            <div>
+                Many thanks to Spirit of the Creative (SOC) <br> for inviting us as guest performers. 
+                <br> We had a blast!
+            </div>
+            
+            <br><br>
+            <h3> Team Reminders </h3>
+            <div> 
+                Shopping period for dances are over! Attendance will now be counted.<br>
+                Ballet shoe orders have arrived. Pick yours up from Bianca!<br>
+                Boba Bonding for the Team this Friday! See you all there!
+            </div>
+            
+            <br><br>
+            <h3> Upcoming Performance Events </h3>
+            <h4> Catch Wuzee in Action! </h4>
+            <div>
+                Oct 26th, 2019: Parent's Weekend <br>
+                Cohen Auditorium, Tufts University
+            </div>
+            <br>
+            <div>
+                Nov 2nd, 2019: UJP's Pan Asia: A New Dawn for Peace <br>
+                Democracy Center, 45 Mount Auburn Street, Cambridge MA 
+            </div>
+            <br>
+            <div>
+                Feb 21st, 2020: Spring Festival Gala <br>
+                Wilbur Theatre, 246 Tremont St, Boston MA 
+            </div>
+        </article>
+        
+        <br>
+        <footer>
+            <div id = "logo" style="text-align: center">
+                <img src="Logo.jpg">
+            </div>
 
-h3 {
-    display: block;
-    text-align: center;
-    color: #000;
-    box-sizing: border-box;
-    padding: 10px 0px 0px 0px;
-    text-decoration: underline;
-}
-
-h4 {
-    display: block;
-    text-align: center;
-    color: #000;
-    box-sizing: border-box;
-}
-
-#nav-bar {
-    width: 100%;
-    background-color: #8158B4;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    z-index: 9999;
-}
-
-#nav-bar a {
-     float: left;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-
-  text-align: center;
-  padding-top: 10px;
-   padding-bottom: 10px;
-  line-height: 20px;
-}
-
-#nav-bar ul {
-    list-style-type: none;
-    padding-top: 10px;
-
-
-}
-
-#nav-bar ul li {
-    display: inline-block;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #609B91;
-     border-radius: 2%
-
-}
-
-article {
-    text-align: center;
-    margin-top: auto;
-}
-article ul {
-    list-style-type: none;
-    clear: left;
-    padding: none;
-}
-
-article ul li {
-    margin-bottom: 10px;
-}
-
-iframe {
-    margin: 0 auto;
-    display: block;
-}
+        <br><br><br>
+</body>
+</html>
