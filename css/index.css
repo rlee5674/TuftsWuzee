@@ -4,6 +4,7 @@
 }
 
 * {
+     box-sizing: border-box;
     font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
@@ -79,18 +80,22 @@ h4 {
 
 #nav-bar a {
     color: #fff;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: none;
 }
 
 #nav-bar ul {
     list-style-type: none;
+     padding-top: 10px;
+
 }
 
 #nav-bar ul li {
     display: inline-block;
     padding-left: 3%;
     padding-right: 3%;
+     background-color: #609B91;
+     border-radius: 3%
 }
 
 article {
