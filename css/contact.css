@@ -11,7 +11,7 @@ body {
   
 color: #0B1708;
 display:block;
-  background-image: url("../images/Showcase Pic.jpg"), url("../images/b4.jpg"), url("../images/b3.jpg"), url("../images/b2.jpg");
+  background-image: url("../images/Showcase Pic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -33,14 +33,6 @@ display:block;
   box-sizing: border-box;
 }
 
-#textlikepic {
-    font-size: 1rem;
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-    border-radius: 20%;
-    background-color: #A18B79; 
-}
 /*FORM STYLE**************************************************/
 
 #row:after {
@@ -60,6 +52,16 @@ display:block;
   text-align: center;
 }
 
+h3 {
+
+  font-size: 30px;
+}
+h4{
+font-size: 25px;
+}
+p{
+   font-size: 20px;
+}
 #submit:hover {
   background-color: #2C3A96;
 }
@@ -70,25 +72,24 @@ display:block;
   padding: 10px;
   text-align: center;
   box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0 auto;
-  width:60%;
+  width:50%;
   vertical-align: middle;
   justify-content: center;
   float:left;
   position: relative;
   z-index: -100;
-  top: 20%;
-  left: 20%;
-  border-radius: 15%;
+  top: 25%;
+  left: 25%;
+  border-radius: 5%;
 
 
 }
 
 
 #text, select, textarea, #email, #name  {
-  width: 90%;
-  padding: 12px;
+  width: 80%;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
@@ -104,10 +105,12 @@ display:block;
 
 #col2{
   margin-top: 6px;
-  float: left;
-  width: 75%;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
 
 }
+
 
 #buttoflex {
   display: flex;
