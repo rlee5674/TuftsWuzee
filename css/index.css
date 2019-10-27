@@ -2,7 +2,6 @@
     color: #B3F2CD !important;  
     font-weight: bold;
 }
-}
 
 * {
     font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -40,7 +39,7 @@ h1 {
     color: #4c0d32;
     width: 100%;
     padding-top: 10vh;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     margin: 0;
 }
 
